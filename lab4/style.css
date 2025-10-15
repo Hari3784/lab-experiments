@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #ffb6c1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 120px;
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff8dc;
+}
+
+/* Slideshow Section */
+.slideshow {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fef6f7;
+}
+
+.slides {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.slides img:first-child {
+  display: block;
+}
+
+/* Slideshow Animation */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Simple JS-free slideshow animation using CSS */
+@keyframes slideShow {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slides img:nth-child(1) {
+  animation: slideShow 9s infinite;
+}
+
+.slides img:nth-child(2) {
+  animation: slideShow 9s infinite 3s;
+}
+
+.slides img:nth-child(3) {
+  animation: slideShow 9s infinite 6s;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background: #fff0f5;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #ff69b4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffb6c1;
+  color: #000;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .slides {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}

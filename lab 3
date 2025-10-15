@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenona G - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lenona G</h1>
+        <h2>Frontend Developer</h2>
+    </header>
+
+    <section id="intro">
+        <p>Hello! I am a frontend developer passionate about creating interactive and user-friendly web interfaces. I specialize in HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Responsive Image -->
+    <section id="image-section">
+        <img src="https://via.placeholder.com/800x400" alt="Sample Project Image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I build responsive websites that work across devices and screen sizes using modern front-end frameworks and design principles.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
